@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Update Profile</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="update_profile.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #2c2c2c; /* Dark background for the admin panel */
+            color: #fff; /* White text */
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #3c3c3c; /* Slightly lighter background for the form */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #fff; /* White background for inputs */
+            color: #333; /* Dark text for inputs */
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff; /* Bootstrap primary color */
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        .login-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #007bff; /* Bootstrap primary color for link */
+        }
+        .login-link:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Panel - Update Profile</h1>
+        <form id="update-profile-form">
+            <div class="form-group">
+                <label for="prof-name">Name:</label>
+                <input type="text" id="prof-name" name="prof-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="prof-description">Description:</label>
+                <textarea id="prof-description" name="prof-description" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="research-interests">Research Interests (Comma Separated):</label>
+                <input type="text" id="research-interests" name="research-interests" required>
+            </div>
+
+            <div class="form-group">
+                <label for="publications">Publications (Comma Separated):</label>
+                <input type="text" id="publications" name="publications" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+
+            <button type="submit">Update Profile</button>
+        </form>
+
+        <a href="../login.html" class="login-link">Back to Login</a> <!-- Link to the login page -->
+    </div>
+
+    <script>
+        // Redirect to login if not logged in
+        if (!localStorage.getItem("isAdmin")) {
+            window.location.href = "../login.html"; // Redirect to login page
+        }
+
+        // Handle the profile update form submission (placeholder for functionality)
+        document.getElementById('update-profile-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent the default form submission
+
+            // Retrieve form data
+            const name = document.getElementById('prof-name').value;
+            const description = document.getElementById('prof-description').value;
+            const researchInterests = document.getElementById('research-interests').value.split(',');
+            const publications = document.getElementById('publications').value.split(',');
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+
+            // Normally, you'd send this data to a server, but for static sites, we'll just log it
+            console.log('Profile Updated:', {
+                name,
+                description,
+                researchInterests,
+                publications,
+                email,
+                phone
+            });
+
+            // Optionally, show a success message or handle further actions here
+            alert('Profile updated successfully!');
+        });
+    </script>
+</body>
+</html>

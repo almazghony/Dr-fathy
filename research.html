@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Professor Profile</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/script.js" defer></script>
+        <style>
+            /* Custom styling for the Publications and Books sections */
+            #publications, #books {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            #publications li, #books li {
+                margin-bottom: 15px;
+                background-color: #f8f9fa;
+                border-left: 5px solid #007bff;
+                padding: 15px;
+                border-radius: 5px;
+            }
+            #publications li a, #books li a {
+                color: #007bff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            #publications li a:hover, #books li a:hover {
+                text-decoration: underline;
+            }
+            #publications h2, #books h2 {
+                margin-top: 40px;
+            }
+        </style>
+    </head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Dr. Fathy</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="research.html">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container mt-4">
+        <h1>Research Interests</h1>
+        <div class="research-content">
+            <h2>Areas of Specialization</h2>
+            <ul id="research-interests">
+                <li>Artificial Intelligence</li>
+                <li>Machine Learning</li>
+                <li>Natural Language Processing</li>
+                <li>Ethical AI</li>
+                <li>Data Science</li>
+            </ul>
+            
+            <h2>Current Projects</h2>
+            <p>
+                Dr. Jane Doe is currently working on several projects aimed at improving the ethical implications of AI technologies:
+            </p>
+            <ul>
+                <li><strong>Project A:</strong> Developing algorithms that mitigate bias in AI systems.</li>
+                <li><strong>Project B:</strong> Researching methods for transparency in AI decision-making.</li>
+                <li><strong>Project C:</strong> Collaborative project on AI in healthcare, focusing on patient data protection.</li>
+            </ul>
+
+            <!-- Publications Section -->
+            <h2>Publications</h2>
+            <div class="publications-section">
+                <ul id="publications">
+                    <li>
+                        <a href="path-to-pdf1.pdf" download>
+                            Doe, J. (2023). "Ethical Considerations in AI Development." Journal of Artificial Intelligence Research.
+                        </a>
+                    </li>
+                    <li>
+                        <a href="path-to-pdf2.pdf" download>
+                            Doe, J., & Smith, A. (2022). "Bias in Machine Learning: A Comprehensive Review." IEEE Transactions on Neural Networks.
+                        </a>
+                    </li>
+                    <li>
+                        <a href="path-to-pdf3.pdf" download>
+                            Doe, J. (2021). "Natural Language Processing for Healthcare Applications." Journal of Medical Systems.
+                        </a>
+                    </li>
+                    <li>
+                        <a href="path-to-pdf4.pdf" download>
+                            Doe, J. (2020). "Understanding the Impact of AI on Society." AI & Society Journal.
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <h2>Books</h2>
+            <div class="books-section">
+                <ul id="books">
+                    <li>
+                        <a href="path-to-book1.pdf" download>
+                            Doe, J. (2022). "AI Ethics: A Comprehensive Guide."
+                        </a>
+                    </li>
+                    <li>
+                        <a href="path-to-book2.pdf" download>
+                            Doe, J. (2021). "Machine Learning in Practice."
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e1e 50%, #333 100%);
+    color: #fff;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+/* Profile Header */
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #555;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #00aaff;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+p, li {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 50px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+/* Publications & Books Section */
+.publications-section, .books-section {
+    background-color: #1a1a1a; /* Dark background for the entire section */
+    padding: 30px;
+    border-radius: 12px; /* Rounded corners for a smooth look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Shadow for depth */
+    margin-bottom: 40px; /* Space between sections */
+}
+
+#publications, #books {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#publications li, #books li {
+    margin-bottom: 20px;
+    background-color: #222; /* Slightly lighter background for list items */
+    border: 1px solid #444; /* Subtle border for separation */
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#publications li:hover, #books li:hover {
+    background-color: #2a2a2a; /* Lighter on hover for interactivity */
+    transform: scale(1.02); /* Slight scale-up effect on hover */
+}
+
+#publications li a, #books li a {
+    color: #00aaff; /* Bright blue links for contrast */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#publications li a:hover, #books li a:hover {
+    color: #0088cc; /* Slight color change on hover */
+    text-decoration: underline;
+}
+
+#publications h2, #books h2 {
+    margin-top: 40px;
+    color: #00aaff;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+    font-size: 2rem;
+}
+/* Contact Info */
+.contact-link {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #0088cc;
+}
+
+#phone {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #ddd;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #000000;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #ff0000 !important;
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: #fff;
+}
+
+/* Researches Page Specific Styles */
+.research-content {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #00aaff;
+}
+
+h3 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+
+    p, li {
+        font-size: 1rem;
+    }
+    .publications-section, .books-section {
+        padding: 20px;
+    }
+
+    #publications li, #books li {
+        padding: 15px;
+    }
+
+    #publications h2, #books h2 {
+        font-size: 1.5rem;
+    }
+
+}
